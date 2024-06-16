@@ -75,7 +75,7 @@ header {
 
 .nav-bar .tog-btn {
     color: aliceblue;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     cursor: pointer;
     display: none;
 }
@@ -134,7 +134,7 @@ header {
 }
 
 section#txt {
-    height:calc(100vh - 293px);
+    height:calc(100vh - 294px);
     display: flex;
     flex-direction: column;
     align-items: center;
