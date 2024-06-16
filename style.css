@@ -214,11 +214,29 @@ footer {
 }
 
 @media (max-width: 652px) {
+    .nav-bar .logo a {
+        font-size: 1.3rem;
+    }
     .dr-menu{
         left: 2rem;
         width: unset;
     }
     section#txt {
-        height:calc(100vh - 314px);
+        height:calc(100vh - 288px);
+    }
+    #txt h1 {
+        font-size: 2.6rem;
+    }
+    #txt p {
+        font-size: 0.8rem;
+    }
+    .footer-content h3 {
+        font-size: 1.8rem;
+    }
+    .footer-content .socials li a {
+        font-size: 1rem;
+    }
+    .footer-content p {
+       font-size: 0.7rem;
     }
 }
