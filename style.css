@@ -208,11 +208,17 @@ footer {
     .dr-menu {
         display: block;
     }
+    section#txt {
+        height:calc(100vh - 295px);
+    }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 652px) {
     .dr-menu{
         left: 2rem;
         width: unset;
+    }
+    section#txt {
+        height:calc(100vh - 314px);
     }
 }
