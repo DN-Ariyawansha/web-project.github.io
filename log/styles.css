@@ -55,7 +55,7 @@ body {
     color: aliceblue;
     border-radius: 12px;
     padding: 30px 40px;
-    margin-top: 190px; /* Adjusted to ensure the form is not hidden behind the navbar */
+    margin-top: 150px; /* Adjusted to ensure the form is not hidden behind the navbar */
 }
 
 .wrapper h1 {
