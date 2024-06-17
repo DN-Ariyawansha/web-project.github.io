@@ -5,46 +5,72 @@
         <meta name="description" content="Loging form">
         <meta name="author" content="Dinusha Niwan">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" type="x-icon" href="res/xicon.png">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <title>Register</title>
+        <title>Home</title>
     </head>
     <body>
-        <nav class="navbar">
-            <div class="nav-container">
-                <a href="#" class="nav-logo"><span>IMBS </span>Green Campus</a>
+        <header>
+            <div class="nav-bar">
+                <div class="logo"><a href="#"><span>IMBS</span> Green Campus</a></div>
+                <ul class="links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="https://imbscampus.ac.lk/homepage/about-us/">About</a></li>
+                    <li><a href="https://imbs.lk/contact">Contact</a></li>
+                    <li><a href="log/index.html">Login</a></li>
+                </ul>
+                <a href="reg/" class="ac-btn">REGISTER ONLINE</a>
+                <div class="tog-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
-        </nav>
-        <div class="wrapper">
-            <form action="connect.php" method="post">
-                <h1>Register</h1>
-                <div class="in-box">
-                    <input type="text" placeholder="Username" name="username" required>
-                    <i class='bx bxs-user'></i>
-                </div>
-                <div class="in-box">
-                    <input type="text" placeholder="NIC" name="nic" required>
-                    <i class='bx bxs-id-card'></i>
-                </div>
-                <div class="in-box">
-                    <input type="text" placeholder="Address" name="address" required>
-                    <i class='bx bxs-home-alt-2' ></i>
-                </div>
-                <div class="in-box">
-                    <input type="text" placeholder="Mobile number" name="mobileno" required>
-                    <i class="fa-solid fa-phone"></i>
-                </div>
-                <div class="in-box">
-                    <input type="text" placeholder="Course" name="course" required>
-                    <i class='bx bxs-book-reader' ></i>
-                </div>
-                <button type="submit" class="sub-btn">submit</button>
-                <div class="reg-link">
-                    <p>Have an account? <a href="../log/index.html">Login</a></p>
-                </div>
-            </form>
-        </div>
+            <div class="dr-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="https://imbscampus.ac.lk/homepage/about-us/">About</a></li>
+                <li><a href="https://imbs.lk/contact">Contact</a></li>
+                <li><a href="reg/index.html" class="ac-btn">REGISTER ONLINE</a></li>
+            </div>
+        </header>
+        <main>
+            <section id="txt">
+                <h1>Welcome To <span>IMBS</span> Green Campus</h1>
+                <p>The right pathway to your future dreams</p>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-content">
+                <h3>Imbs Green Campus</h3>
+                <p>Start your higher education steps , The right pathway to your future dreams</p>
+                <ul class="socials">
+                    <li><a href="https://facebook.com/D1nuw4/"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://wa.me/94768535137"><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a href="https://www.instagram.com/pc_dinuwa"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://github.com/Dinusha-Niwan"><i class="fab fa-github"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <script type="text/javascript">
+                    document.write(new Date().getFullYear());
+                  </script> pc_dinuwa. All rights reserved.</p>
+            </div>
+        </footer>
+        <!--------------------------------- JS SCRIPT  ---------------------------------------------->
+
+        <script>
+            const toggleBtn = document.querySelector('.tog-btn');
+            const toggleBtnIcon = document.querySelector('.tog-btn i');
+            const dropDownMenu = document.querySelector('.dr-menu');
+
+            toggleBtn.onclick = function (){
+                dropDownMenu.classList.toggle('open');
+                const isOpen = dropDownMenu.classList.contains('open');
+
+                toggleBtnIcon.className = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+
+            }
+        </script>
     </body>
 </html>
