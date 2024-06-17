@@ -139,6 +139,9 @@ body {
 .reg-link p a:hover {
     text-decoration: underline;
 }
+#togglePassword {
+    cursor: pointer;
+}
 @media (max-width: 768px) {
     .nav-menu {
         display: none;
