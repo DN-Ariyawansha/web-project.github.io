@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.783) url(res/bg1.jpg);
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-size: cover;
+}
+
+.navbar {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(50px);
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-logo {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav-logo span{
+    color: #32CD32;
+}
+.wrapper {
+    width: 420px;
+    background: rgba(0, 0, 0, 0.659);
+    color: aliceblue;
+    border-radius: 12px;
+    padding: 30px 40px;
+    margin-top: 290px; /* Adjusted to ensure the form is not hidden behind the navbar */
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    font-family: "Roboto Condensed", sans-serif;
+    text-align: center;
+}
+
+.wrapper .in-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.in-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: aliceblue;
+    padding: 20px 45px 20px 20px;
+}
+
+.in-box input::placeholder {
+    color: aliceblue;
+}
+
+.in-box i {
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    transform: translate(-50%);
+    font-size: 20px;
+}
+
+.wrapper .fo {
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+    text-align: center;
+}
+
+.fo a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.fo a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .sub-btn {
+    width: 100%;
+    height: 45px;
+    background: #32CD32;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #1c1c1c;
+    font-weight: 600;
+}
+.wrapper .reg-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.reg-link p a {
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.reg-link p a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .nav-logo {
+        font-size: 20px;
+    }
+
+    .wrapper {
+        width: 95%;
+        padding: 20px 30px;
+        margin-top: 250px; /* Adjust based on navbar height */
+    }
+
+    .wrapper h1 {
+        font-size: 30px;
+    }
+
+    .in-box input {
+        font-size: 14px;
+        padding: 15px 40px 15px 15px;
+    }
+
+    .in-box i {
+        font-size: 18px;
+    }
+
+    .wrapper .sub-btn {
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-container {
+        padding: 0 10px;
+    }
+
+    .nav-logo {
+        font-size: 18px;
+    }
+
+    .wrapper {
+        padding: 20px;
+        margin-top: 250px; /* Adjust based on navbar height */
+    }
+
+    .wrapper h1 {
+        font-size: 26px;
+    }
+
+    .in-box input {
+        font-size: 12px;
+        padding: 12px 35px 12px 12px;
+    }
+
+    .in-box i {
+        font-size: 16px;
+    }
+
+    .wrapper .sub-btn {
+        height: 35px;
+        font-size: 12px;
+    }
+}
